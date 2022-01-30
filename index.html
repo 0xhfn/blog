@@ -56,6 +56,49 @@
 	html,body{cursor:url("https://1.bp.blogspot.com/-qbWo9mPKO2Y/YL9utYdQBdI/AAAAAAAAFs4/mtjGu6u2uGwtJsT4gZG4lbhLV1a5lG6OQCLcBGAsYHQ/s0/mouse-f1.png"), auto;}
 	a:hover{cursor:url("https://1.bp.blogspot.com/-nYv2dLl3oXY/YL9utYBCh8I/AAAAAAAAFtA/wII4lVw5w4k-4isGMY41heTqk8U4TJujgCLcBGAsYHQ/s0/mouse-f2.png"), auto;}
 </style>
+<script>
+	function killCopy(n) {
+		return !1
+	}
+
+	function reEnable() {
+		return !0
+	}
+	document.onselectstart = new Function("return false"), window.sidebar && (document.onmousedown = killCopy, document.onclick = reEnable);
+	</script>
+	<script type="text/javascript">
+	function clickIE4() {
+		return 2 == event.button ? !1 : void 0
+	}
+
+	function clickNS4(n) {
+		return !(document.layers || document.getElementById && !document.all) || 2 != n.which && 3 != n.which ? void 0 : !1
+	}
+	$(document).ready(function() {
+		const n = $("body"),
+			e = $(".btn");
+		e.on("click", function() {
+			e.removeClass("active"), $(this).addClass("active"), n.toggleClass("dark")
+		})
+	});
+	var message = "Haizz";
+	document.addEventListener("keydown", function(n) {
+		n.ctrlKey && n.preventDefault()
+	}), document.layers ? (document.captureEvents(Event.MOUSEDOWN), document.onmousedown = clickNS4) : document.all && !document.getElementById && (document.onmousedown = clickIE4), document.oncontextmenu = new Function("return false"), document.onkeypress = function(n) {
+		return n = n || window.event, 123 == n.keyCode ? !1 : void 0
+	}, document.onmousedown = function(n) {
+		return n = n || window.event, 123 == n.keyCode ? !1 : void 0
+	}, document.onkeydown = function(n) {
+		return n = n || window.event, 123 == n.keyCode ? !1 : void 0
+	};
+	</script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$("*").bind("cut copy paste contextmenu", function(n) {
+			n.preventDefault()
+		})
+	});
+	</script>
 </body>
 
 </html>
