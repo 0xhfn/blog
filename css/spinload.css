@@ -9,14 +9,15 @@
 }
 
 .spinner {
-	position:absolute;
+
 	left:50%; 
 	top:50%; 
 	width: 50px;
 	height: 30px;
 	text-align: center;
 	font-size: 10px;
-	margin-left:-25px;
+	margin-left:-25px;	
+	position:absolute;
 }
 
 .spinner > div {
@@ -56,6 +57,7 @@
 @keyframes stretchdelay {
 	0%, 40%, 100% { 
 	transform: scaleY(0.4);
+		
 	-webkit-transform: scaleY(0.4);
 	}  20% { 
 	transform: scaleY(1.0);
