@@ -26,13 +26,14 @@ function init() {
 function firstQuestion() {
     $('.content').hide();
     Swal.fire({
-        title: CONFIG.introTitle,
         text: CONFIG.introDesc,
+        title: CONFIG.introTitle,
         imageUrl: 'img/logi.gif',
         imageWidth: 300,
         imageHeight: 300,
         background: '#fff url("img/iput-bg.jpg")',
         imageAlt: 'Custom image',
+        text: CONFIG.introDesc,
         confirmButtonText: CONFIG.btnIntro
     }).then(function() {
         $('.content').show(200);
